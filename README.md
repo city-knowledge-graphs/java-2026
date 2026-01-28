@@ -1,4 +1,4 @@
-## Java codes for the Semantic Web Technologies and Knowledge Graphs module (2024/2025)
+## Java codes for the Semantic Web Technologies and Knowledge Graphs module (2025/2026)
 
 - **Laboratory 1**: Set up.
 <!--
