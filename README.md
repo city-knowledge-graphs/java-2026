@@ -1,6 +1,7 @@
 ## Java codes for the Semantic Web Technologies and Knowledge Graphs module (2024/2025)
 
 - **Laboratory 1**: Set up.
+<!--
 - **Laboratory 2**: Creating (small) RDF-based Knowledge Graphs
 - **Laboratory 3**: Modelling OWL ontologies in Protégé.
 - **Laboratory 4**: Exposing Tabular Data as an RDF-based Knowledge Graph
@@ -9,7 +10,7 @@
 - **Laboratory 7**: SPARQL 1.1, rules and GraphDB
 - **Laboratory 8**: Ontology Alignment
 - **Laboratory 9**: Ontology Embeddings with OWL2Vec*
-
+-->
 
 
 ### Dependencies
