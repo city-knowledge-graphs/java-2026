@@ -28,3 +28,6 @@ replay_pid*
 .classpath
 .project
 .settings
+
+student-data/*.*
+student-data/

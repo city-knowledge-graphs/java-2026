@@ -126,10 +126,10 @@ public class OWLReasoning {
 			
 			//new OWLReasoning("http://protege.stanford.edu/ontologies/pizza/pizza.owl", "files/lab6/pizza_inference.ttl");
 			System.out.println("MINI reasoner: ");
-			new OWLReasoning("files/lab4/lab-owl2rl.ttl", "files/lab4/lab-owl2rl-extended-mini.ttl",JenaReasoner.MINI);
+			new OWLReasoning("files/lab4/lab-owl2rl.ttl", "student-data/lab-owl2rl-extended-mini.ttl",JenaReasoner.MINI);
 			
 			System.out.println("\nMICRO reasoner: ");
-			new OWLReasoning("files/lab4/lab-owl2rl.ttl", "files/lab4/lab-owl2rl-extended-micro.ttl",JenaReasoner.MICRO);
+			new OWLReasoning("files/lab4/lab-owl2rl.ttl", "student-data/lab-owl2rl-extended-micro.ttl",JenaReasoner.MICRO);
 			
 			
 			

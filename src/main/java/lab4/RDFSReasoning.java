@@ -132,7 +132,7 @@ public class RDFSReasoning {
 
 		try {
 			
-			new RDFSReasoning("files/lab4/lab-rdfs.ttl", "files/lab4/lab-rdfs-extended.ttl");
+			new RDFSReasoning("files/lab4/lab-rdfs.ttl", "student-data/lab-rdfs-extended.ttl");
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
