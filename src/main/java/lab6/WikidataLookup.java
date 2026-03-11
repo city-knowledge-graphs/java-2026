@@ -22,9 +22,15 @@ public class WikidataLookup extends LookupService{
 	
 		
 	private final String REST_URL = "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&";
+	
+	//New API in 2026. We also need token
+	//private final String REST_URL = "https://www.wikidata.org/w/rest.php/wikibase/v1/search/items?format=json&";
+			
+	
 		
 	private final String limit = "limit";
 	private final String search = "search";
+	//private final String q = "q";
 	private final String language = "language";	
 	//Not supported
 	//private final String QueryClass = "QueryClass";
@@ -39,7 +45,14 @@ public class WikidataLookup extends LookupService{
 		ub.addParameter(limit, String.valueOf(max_hits));
 		ub.addParameter(language, lang);
 		ub.addParameter(search, query);
+		//ub.addParameter(q, query);
 		return ub.build().toURL();
+		
+		
+		
+		
+		
+		
 		
 	}
 

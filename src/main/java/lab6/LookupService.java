@@ -41,7 +41,25 @@ private final ObjectMapper mapper = new ObjectMapper();
 		//conn.setRequestProperty("Authorization", "apikey token="
 		//		+ API_KEY_Ernesto);
 		conn.setRequestProperty("Accept", "application/json");
+		
+		
+		//Set User-Agent (recommended by Wikimedia): fixed in 2026 thanks to an interaction with chat-gpt
+        conn.setRequestProperty(
+            "User-Agent",
+            "KGs-at-City/1.0 (ernesto.jimenez-ruiz@city.ac.uk)"
+        );
 
+		
+			
+		/*HttpRequest request = HttpRequest.newBuilder()
+			    .uri(URI.create(
+			        "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Oxford&language=en&format=json"))
+			    .header("User-Agent", "ResearchKGTool/1.0 (your-email@example.com)")
+			    .GET()
+			    .build();
+		*/
+		
+		
 		return conn;
 
 	}
