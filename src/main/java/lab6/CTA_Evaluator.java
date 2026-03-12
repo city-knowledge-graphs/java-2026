@@ -1,3 +1,6 @@
+/**
+ * Created with the support of chatgp suing the python version as input.
+ */
 package lab6;
 
 import java.io.BufferedReader;
@@ -62,6 +65,8 @@ public class CTA_Evaluator {
                 String annotation = parts[2];
 
                 String col = tabId + " " + colId;
+                //System.out.println(col);
+                //System.out.println("\t" + annotation);
 
                 if (annotatedCols.contains(col)) {
                     throw new Exception("Duplicate columns in the submission file");

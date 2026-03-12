@@ -23,7 +23,10 @@
 hs_err_pid*
 replay_pid*
 /target/
-
+/bin/
+/bin/pom.xml
+/bin/.gitignore
+/bin/*.*
 
 .classpath
 .project

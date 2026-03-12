@@ -39,6 +39,8 @@ public class CEA_Evaluator {
 
                 String cell = tabId + " " + colId + " " + rowId;
                 gtCellEnt.put(cell, entity);
+                //System.out.println(cell + "\n\t" + entity);
+                
             }
         }
 
@@ -55,10 +57,14 @@ public class CEA_Evaluator {
                 String tabId = parts[0];
                 String rowId = parts[1];
                 String colId = parts[2];
-                String entity = parts[3];
+                String entity = parts[3].replace("\"", ""); //removes trailing quotes too
 
                 String cell = tabId + " " + colId + " " + rowId;
-
+                //System.out.println(cell + "\n\t" + entity);
+                
+                
+                
+                
                 if (gtCellEnt.containsKey(cell)) {
 
                     if (annotatedCells.contains(cell)) {
@@ -68,9 +74,13 @@ public class CEA_Evaluator {
                     }
 
                     String annotation = entity;
-                    String gtEntities = gtCellEnt.get(cell).toLowerCase();
+                    String gtEntities = gtCellEnt.get(cell).toLowerCase().replace("\"", ""); //removes trailing quotes too
 
                     List<String> gtSplit = Arrays.asList(gtEntities.split("\\s+"));
+                    
+                    //System.out.println(gtSplit);
+                    //System.out.println(annotation.toLowerCase());
+                    
 
                     if (gtSplit.contains(annotation.toLowerCase())) {
                         correctCells.add(cell);
@@ -78,6 +88,11 @@ public class CEA_Evaluator {
                 }
             }
         }
+        
+        //System.out.println(annotatedCells.size());
+        //System.out.println(correctCells.size());
+        //System.out.println(gtCellEnt.size());
+        
 
         double precision = annotatedCells.size() > 0 ?
                 (double) correctCells.size() / annotatedCells.size() : 0.0;
