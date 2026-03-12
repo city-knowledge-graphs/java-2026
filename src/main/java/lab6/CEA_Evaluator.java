@@ -1,4 +1,8 @@
+/**
+ * Created with the support of chatgp suing the python version as input.
+ */
 package lab6;
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
