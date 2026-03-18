@@ -34,3 +34,6 @@ replay_pid*
 
 student-data/*.*
 student-data/
+
+#We do not want to make the key public
+files/openrouter.key
