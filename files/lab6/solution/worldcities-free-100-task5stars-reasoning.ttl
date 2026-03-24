@@ -1,0 +1,2474 @@
+@prefix wco:   <http://www.semanticweb.org/ernesto/in3067-inm713/wco/> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/2000/01/rdf-schema#domain>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#domain> .
+
+<http://www.w3.org/2002/07/owl#DatatypeProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/2002/07/owl#Property>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Property> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Property> .
+
+<http://www.w3.org/2002/07/owl#imports>
+        a       <http://www.w3.org/2002/07/owl#OntologyProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#imports> .
+
+wco:population  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:population .
+
+xsd:negativeInteger  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2002/07/owl#ObjectProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/2002/07/owl#intersectionOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#intersectionOf> .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#comment> .
+
+wco:FirstLevelAdminCapitalCity
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "admin - first-level admin capital (e.g. Little Rock, AR)" ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                wco:FirstLevelAdminCapitalCity .
+
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#backwardCompatibleWith> .
+
+<http://www.w3.org/2002/07/owl#Ontology>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Ontology> .
+
+xsd:unsignedLong  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:unsignedLong , xsd:integer , xsd:long , xsd:nonNegativeInteger ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:unsignedLong .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> .
+
+_:b2    a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                _:b2 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                _:b2 ;
+        <http://www.w3.org/2002/07/owl#onProperty>
+                wco:isSecondLevelAdminCapitalOf ;
+        <http://www.w3.org/2002/07/owl#someValuesFrom>
+                <http://dbpedia.org/ontology/Country> .
+
+<http://www.w3.org/2002/07/owl#onProperty>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#onProperty> .
+
+<http://www.w3.org/2002/07/owl#differentFrom>
+        a       <http://www.w3.org/2002/07/owl#SymmetricProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#differentFrom> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
+
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+
+<http://www.w3.org/2002/07/owl#disjointWith>
+        a       <http://www.w3.org/2002/07/owl#SymmetricProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#disjointWith> .
+
+wco:longitude  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "long" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:float , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:longitude .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+wco:CapitalCity  a  <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "primary - country's capital (e.g. Washington D.C.)" ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                wco:CapitalCity .
+
+<http://www.w3.org/2002/07/owl#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Class> .
+
+xsd:duration  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+xsd:double  a   <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+xsd:gMonth  a   <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2002/07/owl#FunctionalProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+xsd:unsignedByte  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:byte , xsd:short , xsd:unsignedByte , xsd:nonNegativeInteger , xsd:unsignedShort ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:unsignedByte .
+
+wco:isFirstLevelAdminCapitalOf
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 , wco:AdminCapitalCity , _:b0 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn , wco:cityIsLocatedIn , wco:isAdminCapitalOf , wco:isFirstLevelAdminCapitalOf .
+
+<http://www.w3.org/2002/07/owl#SymmetricProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+xsd:gMonthDay  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/2002/07/owl#inverseOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#inverseOf> .
+
+<http://dbpedia.org/ontology/capital>
+        a       <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "has capital" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:hasCity , <http://dbpedia.org/ontology/capital> ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                wco:isCapitalOf .
+
+wco:admin_name  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Administrative name of a city" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:admin_name .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+xsd:nonNegativeInteger
+        a       <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:integer , xsd:nonNegativeInteger ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:nonNegativeInteger .
+
+<http://www.w3.org/2002/07/owl#sameAs>
+        a       <http://www.w3.org/2002/07/owl#SymmetricProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#sameAs> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>
+        a       <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://dbpedia.org/ontology/populationTotal>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "population of a city" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:long , <http://www.w3.org/2000/01/rdf-schema#Resource> , xsd:decimal , xsd:integer ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://dbpedia.org/ontology/populationTotal> .
+
+xsd:unsignedShort  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:short , xsd:nonNegativeInteger , xsd:unsignedShort ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:unsignedShort .
+
+xsd:gDay  a     <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+_:b0    a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                _:b0 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                _:b0 ;
+        <http://www.w3.org/2002/07/owl#onProperty>
+                wco:isFirstLevelAdminCapitalOf ;
+        <http://www.w3.org/2002/07/owl#someValuesFrom>
+                <http://dbpedia.org/ontology/Country> .
+
+wco:name_ascii  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Name using only ascii characters" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:name_ascii .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2000/01/rdf-schema#range>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#range> .
+
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso> , <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> .
+
+xsd:boolean  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:nonPositiveInteger .
+
+<http://www.w3.org/2002/07/owl#Nothing>
+        a       <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Nothing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Nothing> .
+
+<http://www.w3.org/2002/07/owl#InverseFunctionalProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+xsd:hexBinary  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://purl.org/dc/elements/1.1/creator>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#AnnotationProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://purl.org/dc/elements/1.1/creator> .
+
+wco:name  a     <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                wco:admin_name ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:name .
+
+<http://www.w3.org/2002/07/owl#oneOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#oneOf> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+xsd:decimal  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean .
+
+<http://dbpedia.org/ontology/Country>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Country"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/ontology/Country> .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#label> .
+
+_:b4    a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                _:b4 ;
+        <http://www.w3.org/2002/07/owl#onProperty>
+                <http://dbpedia.org/ontology/capital> ;
+        <http://www.w3.org/2002/07/owl#someValuesFrom>
+                <http://dbpedia.org/ontology/City> .
+
+xsd:dateTime  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger .
+
+wco:AdminCapitalCity  a  <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                wco:AdminCapitalCity .
+
+xsd:date  a     <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger .
+
+xsd:int  a      <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:int , xsd:integer , xsd:long ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:int .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
+
+xsd:gYear  a    <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://dbpedia.org/ontology/City>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "City"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/ontology/City> .
+
+<http://www.w3.org/2002/07/owl#Thing>
+        a       <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.w3.org/2002/07/owl#incompatibleWith>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#incompatibleWith> .
+
+<http://www.w3.org/2002/07/owl#someValuesFrom>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#someValuesFrom> .
+
+wco:latitude  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "lat" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:float , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:latitude .
+
+<http://www.w3.org/2002/07/owl#OntologyProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+wco:iso2code  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "ISO 3166-1 code with 2 characters: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:iso2code .
+
+wco:isSecondLevelAdminCapitalOf
+        a       <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 , wco:AdminCapitalCity , _:b2 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn , wco:cityIsLocatedIn , wco:isAdminCapitalOf , wco:isSecondLevelAdminCapitalOf .
+
+<http://www.w3.org/2002/07/owl#priorVersion>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#priorVersion> .
+
+<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+
+<http://www.w3.org/2000/01/rdf-schema#Resource>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> .
+
+<http://www.w3.org/2002/07/owl#TransitiveProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+wco:isAdminCapitalOf  a  <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn , wco:cityIsLocatedIn , wco:isAdminCapitalOf ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                wco:hasAdminCapital .
+
+<http://www.w3.org/2002/07/owl#equivalentClass>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2002/07/owl#equivalentClass> .
+
+xsd:short  a    <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:int , xsd:integer , xsd:long , xsd:short ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:short .
+
+wco:iso3code  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#DatatypeProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "ISO 3166-1 code with 3 characters: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:iso3code .
+
+xsd:positiveInteger  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+
+<http://www.w3.org/2000/01/rdf-schema#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+wco:cityIsLocatedIn  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn , wco:cityIsLocatedIn ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                wco:hasCity .
+
+<http://www.w3.org/2002/07/owl#versionInfo>
+        a       <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+
+<http://www.w3.org/2000/01/rdf-schema#Datatype>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+xsd:anyURI  a   <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+_:b1    a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                _:b1 ;
+        <http://www.w3.org/2002/07/owl#onProperty>
+                wco:cityIsLocatedIn ;
+        <http://www.w3.org/2002/07/owl#someValuesFrom>
+                <http://dbpedia.org/ontology/Country> .
+
+xsd:long  a     <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:long , <http://www.w3.org/2000/01/rdf-schema#Resource> , xsd:integer ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:long .
+
+xsd:base64Binary  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+_:b3    a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2002/07/owl#Restriction> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                _:b3 ;
+        <http://www.w3.org/2002/07/owl#onProperty>
+                wco:isCapitalOf ;
+        <http://www.w3.org/2002/07/owl#someValuesFrom>
+                <http://dbpedia.org/ontology/Country> .
+
+wco:isLocatedIn  a  <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn .
+
+xsd:unsignedInt  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:nonNegativeInteger ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:unsignedInt .
+
+wco:isCapitalOf  a  <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/2002/07/owl#FunctionalProperty> , <http://www.w3.org/2002/07/owl#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 , _:b3 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:isLocatedIn , wco:cityIsLocatedIn , wco:isCapitalOf ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                <http://dbpedia.org/ontology/capital> .
+
+<http://www.w3.org/2000/01/rdf-schema#seeAlso>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
+
+xsd:byte  a     <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:int , xsd:integer , xsd:long , xsd:byte , xsd:short ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:byte .
+
+xsd:integer  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:decimal , xsd:integer ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:integer .
+
+xsd:time  a     <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger .
+
+<http://www.w3.org/2000/01/rdf-schema#Literal>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+xsd:float  a    <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:float , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:float .
+
+wco:hasAdminCapital  a  <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:hasCity , wco:hasAdminCapital ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                wco:isAdminCapitalOf .
+
+wco:hasCity  a  <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> , <http://www.w3.org/2002/07/owl#ObjectProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                wco:hasCity ;
+        <http://www.w3.org/2002/07/owl#inverseOf>
+                wco:cityIsLocatedIn .
+
+<http://www.w3.org/2002/07/owl#Restriction>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Restriction> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2002/07/owl#Restriction> .
+
+xsd:nonPositiveInteger
+        a       <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean .
+
+wco:SecondLevelAdminCapitalCity
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "minor - lower-level admin capital (e.g. Fayetteville, AR)" ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b2 , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                wco:SecondLevelAdminCapitalCity .
+
+xsd:gYearMonth  a  <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+xsd:string  a   <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                xsd:string , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2002/07/owl#disjointWith>
+                xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                xsd:string .
+
+dbr:London  a                wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "London, City of" ;
+        wco:cityIsLocatedIn  dbr:United_Kingdom ;
+        wco:isCapitalOf      dbr:United_Kingdom ;
+        wco:isLocatedIn      dbr:United_Kingdom ;
+        wco:latitude         "51.5072"^^xsd:float ;
+        wco:longitude        "-0.1275"^^xsd:float ;
+        wco:name             "London" ;
+        wco:name_ascii       "London" ;
+        wco:population       "10979000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:London .
+
+dbr:Cairo  a                 wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Al Qāhirah" ;
+        wco:cityIsLocatedIn  dbr:Egypt ;
+        wco:isCapitalOf      dbr:Egypt ;
+        wco:isLocatedIn      dbr:Egypt ;
+        wco:latitude         "30.0561"^^xsd:float ;
+        wco:longitude        "31.2394"^^xsd:float ;
+        wco:name             "Cairo" ;
+        wco:name_ascii       "Cairo" ;
+        wco:population       "19372000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Cairo .
+
+dbr:Dhaka  a                 wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Dhaka" ;
+        wco:cityIsLocatedIn  dbr:Bangladesh ;
+        wco:isCapitalOf      dbr:Bangladesh ;
+        wco:isLocatedIn      dbr:Bangladesh ;
+        wco:latitude         "23.7161"^^xsd:float ;
+        wco:longitude        "90.3961"^^xsd:float ;
+        wco:name             "Dhaka" ;
+        wco:name_ascii       "Dhaka" ;
+        wco:population       "15443000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Dhaka .
+
+dbr:Tehran  a                wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Tehrān" ;
+        wco:cityIsLocatedIn  dbr:Iran ;
+        wco:isCapitalOf      dbr:Iran ;
+        wco:isLocatedIn      dbr:Iran ;
+        wco:latitude         "35.7"^^xsd:float ;
+        wco:longitude        "51.4167"^^xsd:float ;
+        wco:name             "Tehran" ;
+        wco:name_ascii       "Tehran" ;
+        wco:population       "13633000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tehran .
+
+dbr:Nanning  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Guangxi" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "22.8192"^^xsd:float ;
+        wco:longitude                   "108.315"^^xsd:float ;
+        wco:name                        "Nanning" ;
+        wco:name_ascii                  "Nanning" ;
+        wco:population                  "7153300"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nanning .
+
+dbr:Weifang  a               wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Shandong" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "36.7167"^^xsd:float ;
+        wco:longitude        "119.1"^^xsd:float ;
+        wco:name             "Weifang" ;
+        wco:name_ascii       "Weifang" ;
+        wco:population       "9373000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Weifang .
+
+dbr:Iran  a           wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Tehran ;
+        wco:hasCity   dbr:Tehran ;
+        wco:iso2code  "IR" ;
+        wco:iso3code  "IRN" ;
+        wco:name      "Iran" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Iran .
+
+<http://dbpedia.org/resource/Nanyang,_Henan>
+        a                    wco:City , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 ;
+        wco:admin_name       "Henan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "32.9987"^^xsd:float ;
+        wco:longitude        "112.5292"^^xsd:float ;
+        wco:name             "Nanyang" ;
+        wco:name_ascii       "Nanyang" ;
+        wco:population       "12010000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://dbpedia.org/resource/Nanyang,_Henan> .
+
+dbr:Onitsha  a                wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Anambra" ;
+        wco:cityIsLocatedIn   dbr:Nigeria ;
+        wco:isAdminCapitalOf  dbr:Nigeria ;
+        wco:isLocatedIn       dbr:Nigeria ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:Nigeria ;
+        wco:latitude          "6.1667"^^xsd:float ;
+        wco:longitude         "6.7833"^^xsd:float ;
+        wco:name              "Onitsha" ;
+        wco:name_ascii        "Onitsha" ;
+        wco:population        "7635000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Onitsha .
+
+dbr:Nagoya  a                           wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Aichi" ;
+        wco:cityIsLocatedIn             dbr:Japan ;
+        wco:isAdminCapitalOf            dbr:Japan ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Japan ;
+        wco:isLocatedIn                 dbr:Japan ;
+        wco:latitude                    "35.1167"^^xsd:float ;
+        wco:longitude                   "136.9333"^^xsd:float ;
+        wco:name                        "Nagoya" ;
+        wco:name_ascii                  "Nagoya" ;
+        wco:population                  "9113000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nagoya .
+
+dbr:Hefei  a                            wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Anhui" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "31.8639"^^xsd:float ;
+        wco:longitude                   "117.2808"^^xsd:float ;
+        wco:name                        "Hefei" ;
+        wco:name_ascii                  "Hefei" ;
+        wco:population                  "7457027"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hefei .
+
+dbr:France  a         wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Paris ;
+        wco:hasCity   dbr:Paris ;
+        wco:iso2code  "FR" ;
+        wco:iso3code  "FRA" ;
+        wco:name      "France" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:France .
+
+dbr:Bangkok  a               wco:City , _:b3 , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Krung Thep Maha Nakhon" ;
+        wco:cityIsLocatedIn  dbr:Thailand ;
+        wco:isCapitalOf      dbr:Thailand ;
+        wco:isLocatedIn      dbr:Thailand ;
+        wco:latitude         "13.75"^^xsd:float ;
+        wco:longitude        "100.5167"^^xsd:float ;
+        wco:name             "Bangkok" ;
+        wco:name_ascii       "Bangkok" ;
+        wco:population       "17066000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Bangkok .
+
+dbr:Lahore  a                           wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b0 ;
+        wco:admin_name                  "Punjab" ;
+        wco:cityIsLocatedIn             dbr:Pakistan ;
+        wco:isAdminCapitalOf            dbr:Pakistan ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Pakistan ;
+        wco:isLocatedIn                 dbr:Pakistan ;
+        wco:latitude                    "31.5497"^^xsd:float ;
+        wco:longitude                   "74.3436"^^xsd:float ;
+        wco:name                        "Lahore" ;
+        wco:name_ascii                  "Lahore" ;
+        wco:population                  "11021000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Lahore .
+
+dbr:Tianjin  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b0 ;
+        wco:admin_name                  "Tianjin" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "39.1467"^^xsd:float ;
+        wco:longitude                   "117.2056"^^xsd:float ;
+        wco:name                        "Tianjin" ;
+        wco:name_ascii                  "Tianjin" ;
+        wco:population                  "10800000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tianjin .
+
+dbr:Nantong  a                wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name        "Jiangsu" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "31.9829"^^xsd:float ;
+        wco:longitude         "120.8873"^^xsd:float ;
+        wco:name              "Nantong" ;
+        wco:name_ascii        "Nantong" ;
+        wco:population        "7282835"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nantong .
+
+<http://dbpedia.org/resource/Xi'an>
+        a                               wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Shaanxi" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "34.2667"^^xsd:float ;
+        wco:longitude                   "108.9"^^xsd:float ;
+        wco:name                        "Xi’an" ;
+        wco:name_ascii                  "Xi'an" ;
+        wco:population                  "7135000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://dbpedia.org/resource/Xi'an> .
+
+dbr:Linyi  a                 wco:City , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 ;
+        wco:admin_name       "Shandong" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "35.0606"^^xsd:float ;
+        wco:longitude        "118.3425"^^xsd:float ;
+        wco:name             "Linyi" ;
+        wco:name_ascii       "Linyi" ;
+        wco:population       "10820000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Linyi .
+
+dbr:Ho_Chi_Minh_City  a                 wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b0 ;
+        wco:admin_name                  "Hồ Chí Minh" ;
+        wco:cityIsLocatedIn             dbr:Vietnam ;
+        wco:isAdminCapitalOf            dbr:Vietnam ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Vietnam ;
+        wco:isLocatedIn                 dbr:Vietnam ;
+        wco:latitude                    "10.8167"^^xsd:float ;
+        wco:longitude                   "106.6333"^^xsd:float ;
+        wco:name                        "Ho Chi Minh City" ;
+        wco:name_ascii                  "Ho Chi Minh City" ;
+        wco:population                  "13312000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Ho_Chi_Minh_City .
+
+dbr:Thailand  a       wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Bangkok ;
+        wco:hasCity   dbr:Bangkok ;
+        wco:iso2code  "TH" ;
+        wco:iso3code  "THA" ;
+        wco:name      "Thailand" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Thailand .
+
+dbr:Pakistan  a              wco:Country , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 ;
+        wco:hasAdminCapital  dbr:Lahore , dbr:Karachi ;
+        wco:hasCity          dbr:Lahore , dbr:Karachi ;
+        wco:iso2code         "PK" ;
+        wco:iso3code         "PAK" ;
+        wco:name             "Pakistan" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Pakistan .
+
+dbr:Jining  a                wco:City , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name       "Shandong" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "35.4"^^xsd:float ;
+        wco:longitude        "116.5667"^^xsd:float ;
+        wco:name             "Jining" ;
+        wco:name_ascii       "Jining" ;
+        wco:population       "8023000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Jining .
+
+dbr:Cangzhou  a              wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Hebei" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "38.3037"^^xsd:float ;
+        wco:longitude        "116.8452"^^xsd:float ;
+        wco:name             "Cangzhou" ;
+        wco:name_ascii       "Cangzhou" ;
+        wco:population       "6800000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Cangzhou .
+
+dbr:Moscow  a                wco:City , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Moskva" ;
+        wco:cityIsLocatedIn  dbr:Russia ;
+        wco:isCapitalOf      dbr:Russia ;
+        wco:isLocatedIn      dbr:Russia ;
+        wco:latitude         "55.7558"^^xsd:float ;
+        wco:longitude        "37.6178"^^xsd:float ;
+        wco:name             "Moscow" ;
+        wco:name_ascii       "Moscow" ;
+        wco:population       "17125000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Moscow .
+
+dbr:South_Korea  a    wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Seoul ;
+        wco:hasCity   dbr:Seoul ;
+        wco:iso2code  "KR" ;
+        wco:iso3code  "KOR" ;
+        wco:name      "Korea, South" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:South_Korea .
+
+dbr:Peru  a           wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Lima ;
+        wco:hasCity   dbr:Lima ;
+        wco:iso2code  "PE" ;
+        wco:iso3code  "PER" ;
+        wco:name      "Peru" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Peru .
+
+dbr:Quanzhou  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name        "Fujian" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "24.9139"^^xsd:float ;
+        wco:longitude         "118.5858"^^xsd:float ;
+        wco:name              "Quanzhou" ;
+        wco:name_ascii        "Quanzhou" ;
+        wco:population        "6480000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Quanzhou .
+
+dbr:Nanchong  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name        "Sichuan" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "30.7991"^^xsd:float ;
+        wco:longitude         "106.0784"^^xsd:float ;
+        wco:name              "Nanchong" ;
+        wco:name_ascii        "Nanchong" ;
+        wco:population        "6183000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nanchong .
+
+dbr:Japan  a                 wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Tokyo ;
+        wco:hasAdminCapital  dbr:Nagoya , dbr:Osaka ;
+        wco:hasCity          dbr:Nagoya , dbr:Osaka , dbr:Tokyo ;
+        wco:iso2code         "JP" ;
+        wco:iso3code         "JPN" ;
+        wco:name             "Japan" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Japan .
+
+dbr:Pune  a                  wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Mahārāshtra" ;
+        wco:cityIsLocatedIn  dbr:India ;
+        wco:isLocatedIn      dbr:India ;
+        wco:latitude         "18.5196"^^xsd:float ;
+        wco:longitude        "73.8553"^^xsd:float ;
+        wco:name             "Pune" ;
+        wco:name_ascii       "Pune" ;
+        wco:population       "7764000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Pune .
+
+dbr:Colombia  a       wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                <http://dbpedia.org/resource/Bogota,_New_Jersey> ;
+        wco:hasCity   <http://dbpedia.org/resource/Bogota,_New_Jersey> ;
+        wco:iso2code  "CO" ;
+        wco:iso3code  "COL" ;
+        wco:name      "Colombia" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Colombia .
+
+dbr:Zunyi  a                 wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Guizhou" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "27.705"^^xsd:float ;
+        wco:longitude        "106.9336"^^xsd:float ;
+        wco:name             "Zunyi" ;
+        wco:name_ascii       "Zunyi" ;
+        wco:population       "6127009"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Zunyi .
+
+dbr:Dongguan  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Guangdong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "23.0475"^^xsd:float ;
+        wco:longitude         "113.7493"^^xsd:float ;
+        wco:name              "Dongguan" ;
+        wco:name_ascii        "Dongguan" ;
+        wco:population        "7981000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Dongguan .
+
+dbr:Los_Angeles  a           wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "California" ;
+        wco:cityIsLocatedIn  dbr:United_States ;
+        wco:isLocatedIn      dbr:United_States ;
+        wco:latitude         "34.1139"^^xsd:float ;
+        wco:longitude        "-118.4068"^^xsd:float ;
+        wco:name             "Los Angeles" ;
+        wco:name_ascii       "Los Angeles" ;
+        wco:population       "12750807"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Los_Angeles .
+
+dbr:India  a                 wco:Country , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 ;
+        wco:hasAdminCapital  dbr:Hyderabad , dbr:Chennai , dbr:Bangalore , dbr:Kolkata , dbr:Mumbai , dbr:Delhi , dbr:Ahmadabad ;
+        wco:hasCity          dbr:Hyderabad , dbr:Chennai , dbr:Bangalore , dbr:Kolkata , dbr:Mumbai , dbr:Delhi , dbr:Ahmadabad , dbr:Pune ;
+        wco:iso2code         "IN" ;
+        wco:iso3code         "IND" ;
+        wco:name             "India" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:India .
+
+dbr:Shenyang  a                         wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Liaoning" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "41.8039"^^xsd:float ;
+        wco:longitude                   "123.4258"^^xsd:float ;
+        wco:name                        "Shenyang" ;
+        wco:name_ascii                  "Shenyang" ;
+        wco:population                  "7105000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shenyang .
+
+dbr:Chengdu  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Sichuan" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "30.6636"^^xsd:float ;
+        wco:longitude                   "104.0667"^^xsd:float ;
+        wco:name                        "Chengdu" ;
+        wco:name_ascii                  "Chengdu" ;
+        wco:population                  "11309000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Chengdu .
+
+wco:    a       <http://www.w3.org/2002/07/owl#Ontology> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://purl.org/dc/elements/1.1/creator>
+                "Ernesto Jimenez-Ruiz" .
+
+dbr:New_York_City  a         wco:City , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "New York" ;
+        wco:cityIsLocatedIn  dbr:United_States ;
+        wco:isLocatedIn      dbr:United_States ;
+        wco:latitude         "40.6943"^^xsd:float ;
+        wco:longitude        "-73.9249"^^xsd:float ;
+        wco:name             "New York" ;
+        wco:name_ascii       "New York" ;
+        wco:population       "18713220"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:New_York_City .
+
+dbr:Miami  a                 wco:City , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Florida" ;
+        wco:cityIsLocatedIn  dbr:United_States ;
+        wco:isLocatedIn      dbr:United_States ;
+        wco:latitude         "25.7839"^^xsd:float ;
+        wco:longitude        "-80.2102"^^xsd:float ;
+        wco:name             "Miami" ;
+        wco:name_ascii       "Miami" ;
+        wco:population       "6445545"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Miami .
+
+dbr:Mexico_City  a           wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , wco:CapitalCity , _:b3 ;
+        wco:admin_name       "Ciudad de México" ;
+        wco:cityIsLocatedIn  dbr:Mexico ;
+        wco:isCapitalOf      dbr:Mexico ;
+        wco:isLocatedIn      dbr:Mexico ;
+        wco:latitude         "19.4333"^^xsd:float ;
+        wco:longitude        "-99.1333"^^xsd:float ;
+        wco:name             "Mexico City" ;
+        wco:name_ascii       "Mexico City" ;
+        wco:population       "20996000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Mexico_City .
+
+dbr:Malaysia  a       wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Kuala_Lumpur ;
+        wco:hasCity   dbr:Kuala_Lumpur ;
+        wco:iso2code  "MY" ;
+        wco:iso3code  "MYS" ;
+        wco:name      "Malaysia" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Malaysia .
+
+dbr:Changchun  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Jilin" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "43.9"^^xsd:float ;
+        wco:longitude                   "125.2"^^xsd:float ;
+        wco:name                        "Changchun" ;
+        wco:name_ascii                  "Changchun" ;
+        wco:population                  "7674439"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Changchun .
+
+wco:city_ascii  a            wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name       "admin_name" ;
+        wco:cityIsLocatedIn  dbr:Country_music ;
+        wco:isLocatedIn      dbr:Country_music ;
+        wco:latitude         "lat"^^xsd:float ;
+        wco:longitude        "lng"^^xsd:float ;
+        wco:name             "city" ;
+        wco:name_ascii       "city_ascii" ;
+        wco:population       "population"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                wco:city_ascii .
+
+dbr:Maoming  a                wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name        "Guangdong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "21.6618"^^xsd:float ;
+        wco:longitude         "110.9178"^^xsd:float ;
+        wco:name              "Maoming" ;
+        wco:name_ascii        "Maoming" ;
+        wco:population        "6706000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Maoming .
+
+dbr:Hong_Kong  a             wco:Country , wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        wco:admin_name       "" ;
+        wco:cityIsLocatedIn  dbr:Hong_Kong ;
+        wco:hasCity          dbr:Hong_Kong ;
+        wco:isLocatedIn      dbr:Hong_Kong ;
+        wco:iso2code         "HK" ;
+        wco:iso3code         "HKG" ;
+        wco:latitude         "22.305"^^xsd:float ;
+        wco:longitude        "114.185"^^xsd:float ;
+        wco:name             "Hong Kong" ;
+        wco:name_ascii       "Hong Kong" ;
+        wco:population       "7347000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hong_Kong .
+
+dbr:Karachi  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Sindh" ;
+        wco:cityIsLocatedIn             dbr:Pakistan ;
+        wco:isAdminCapitalOf            dbr:Pakistan ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Pakistan ;
+        wco:isLocatedIn                 dbr:Pakistan ;
+        wco:latitude                    "24.86"^^xsd:float ;
+        wco:longitude                   "67.01"^^xsd:float ;
+        wco:name                        "Karachi" ;
+        wco:name_ascii                  "Karachi" ;
+        wco:population                  "14835000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Karachi .
+
+dbr:Saudi_Arabia  a   wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Riyadh ;
+        wco:hasCity   dbr:Riyadh ;
+        wco:iso2code  "SA" ;
+        wco:iso3code  "SAU" ;
+        wco:name      "Saudi Arabia" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Saudi_Arabia .
+
+dbr:Turkey  a                wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        wco:hasAdminCapital  dbr:Istanbul ;
+        wco:hasCity          dbr:Istanbul ;
+        wco:iso2code         "TR" ;
+        wco:iso3code         "TUR" ;
+        wco:name             "Turkey" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Turkey .
+
+dbr:Chile  a          wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Santiago ;
+        wco:hasCity   dbr:Santiago ;
+        wco:iso2code  "CL" ;
+        wco:iso3code  "CHL" ;
+        wco:name      "Chile" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Chile .
+
+wco:london  a                <http://dbpedia.org/ontology/City> , <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , wco:CapitalCity ;
+        <http://dbpedia.org/ontology/populationTotal>
+                "10979000"^^xsd:long ;
+        wco:admin_name       "London, City of" ;
+        wco:cityIsLocatedIn  wco:united_kingdom ;
+        wco:isCapitalOf      wco:united_kingdom ;
+        wco:isLocatedIn      wco:united_kingdom ;
+        wco:latitude         "51.5072"^^xsd:float ;
+        wco:longitude        "-0.1275"^^xsd:float ;
+        wco:name             "London" ;
+        wco:name_ascii       "London" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                wco:london .
+
+dbr:Chongqing  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name                  "Chongqing" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "29.55"^^xsd:float ;
+        wco:longitude                   "106.5069"^^xsd:float ;
+        wco:name                        "Chongqing" ;
+        wco:name_ascii                  "Chongqing" ;
+        wco:population                  "7739000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Chongqing .
+
+dbr:Shijiazhuang  a                     wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Hebei" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "38.0422"^^xsd:float ;
+        wco:longitude                   "114.5086"^^xsd:float ;
+        wco:name                        "Shijiazhuang" ;
+        wco:name_ascii                  "Shijiazhuang" ;
+        wco:population                  "10784600"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shijiazhuang .
+
+dbr:Chennai  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Tamil Nādu" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "13.0825"^^xsd:float ;
+        wco:longitude                   "80.275"^^xsd:float ;
+        wco:name                        "Chennai" ;
+        wco:name_ascii                  "Chennai" ;
+        wco:population                  "11324000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Chennai .
+
+<http://dbpedia.org/resource/Lu'an>
+        a                     wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Anhui" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "31.7542"^^xsd:float ;
+        wco:longitude         "116.5078"^^xsd:float ;
+        wco:name              "Lu’an" ;
+        wco:name_ascii        "Lu'an" ;
+        wco:population        "6090000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://dbpedia.org/resource/Lu'an> .
+
+dbr:Changsha  a                         wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Hunan" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "28.1987"^^xsd:float ;
+        wco:longitude                   "112.9709"^^xsd:float ;
+        wco:name                        "Changsha" ;
+        wco:name_ascii                  "Changsha" ;
+        wco:population                  "7044118"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Changsha .
+
+dbr:Shanghai  a                         wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Shanghai" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "31.1667"^^xsd:float ;
+        wco:longitude                   "121.4667"^^xsd:float ;
+        wco:name                        "Shanghai" ;
+        wco:name_ascii                  "Shanghai" ;
+        wco:population                  "22120000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shanghai .
+
+dbr:Yantai  a                wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name       "Shandong" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "37.3997"^^xsd:float ;
+        wco:longitude        "121.2664"^^xsd:float ;
+        wco:name             "Yantai" ;
+        wco:name_ascii       "Yantai" ;
+        wco:population       "6516900"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Yantai .
+
+dbr:China  a                 wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Beijing ;
+        wco:hasAdminCapital  dbr:Kunming , dbr:Changsha , dbr:Shenyang , dbr:Nanning , dbr:Zhengzhou , dbr:Shijiazhuang , dbr:Hefei , dbr:Chongqing , dbr:Wuhan , <http://dbpedia.org/resource/Xi'an> , dbr:Guangzhou , dbr:Tianjin , dbr:Hangzhou , dbr:Shanghai , dbr:Nanjing , dbr:Chengdu , dbr:Changchun , dbr:Maoming , dbr:Foshan , dbr:Heze , dbr:Tongshan , dbr:Shenzhen , dbr:Nanchong , dbr:Zhanjiang , dbr:Quanzhou , dbr:Nantong , dbr:Huanggang , dbr:Shangrao , <http://dbpedia.org/resource/Lu'an> , dbr:Yancheng , dbr:Yichun , dbr:Ganzhou , <http://fr.dbpedia.org/resource/Zhoukou> , dbr:Dongguan , dbr:Ningbo ;
+        wco:hasCity          dbr:Beijing , dbr:Kunming , dbr:Changsha , dbr:Shenyang , dbr:Nanning , dbr:Zhengzhou , dbr:Shijiazhuang , dbr:Hefei , dbr:Chongqing , dbr:Wuhan , <http://dbpedia.org/resource/Xi'an> , dbr:Guangzhou , dbr:Tianjin , dbr:Hangzhou , dbr:Shanghai , dbr:Nanjing , dbr:Chengdu , dbr:Changchun , dbr:Maoming , dbr:Foshan , dbr:Heze , dbr:Tongshan , dbr:Shenzhen , dbr:Nanchong , dbr:Zhanjiang , dbr:Quanzhou , dbr:Nantong , dbr:Huanggang , dbr:Shangrao , <http://dbpedia.org/resource/Lu'an> , dbr:Yancheng , dbr:Yichun , dbr:Ganzhou , <http://fr.dbpedia.org/resource/Zhoukou> , dbr:Dongguan , dbr:Ningbo , dbr:Yantai , dbr:Tangshan , dbr:Xinyang , dbr:Cangzhou , dbr:Handan , dbr:Luoyang , dbr:Jining , dbr:Weifang , dbr:Hengyang , dbr:Zunyi , dbr:Fuyang , dbr:Shaoyang , dbr:Baoding , dbr:Linyi , dbr:Bijie , <http://de.dbpedia.org/resource/Zhumadian> , <http://dbpedia.org/resource/Nanyang,_Henan> ;
+        wco:iso2code         "CN" ;
+        wco:iso3code         "CHN" ;
+        wco:name             "China" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:China .
+
+dbr:Osaka  a                            wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b0 ;
+        wco:admin_name                  "Ōsaka" ;
+        wco:cityIsLocatedIn             dbr:Japan ;
+        wco:isAdminCapitalOf            dbr:Japan ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Japan ;
+        wco:isLocatedIn                 dbr:Japan ;
+        wco:latitude                    "34.6936"^^xsd:float ;
+        wco:longitude                   "135.5019"^^xsd:float ;
+        wco:name                        "Ōsaka" ;
+        wco:name_ascii                  "Osaka" ;
+        wco:population                  "14977000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Osaka .
+
+dbr:Argentina  a      wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Buenos_Aires ;
+        wco:hasCity   dbr:Buenos_Aires ;
+        wco:iso2code  "AR" ;
+        wco:iso3code  "ARG" ;
+        wco:name      "Argentina" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Argentina .
+
+dbr:Shenzhen  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Guangdong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "22.535"^^xsd:float ;
+        wco:longitude         "114.054"^^xsd:float ;
+        wco:name              "Shenzhen" ;
+        wco:name_ascii        "Shenzhen" ;
+        wco:population        "15929000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shenzhen .
+
+dbr:Delhi  a                            wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b0 ;
+        wco:admin_name                  "Delhi" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "28.66"^^xsd:float ;
+        wco:longitude                   "77.23"^^xsd:float ;
+        wco:name                        "Delhi" ;
+        wco:name_ascii                  "Delhi" ;
+        wco:population                  "29617000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Delhi .
+
+dbr:Bangalore  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name                  "Karnātaka" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "12.9699"^^xsd:float ;
+        wco:longitude                   "77.598"^^xsd:float ;
+        wco:name                        "Bangalore" ;
+        wco:name_ascii                  "Bangalore" ;
+        wco:population                  "13707000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Bangalore .
+
+dbr:Lagos  a                  wco:City , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b2 ;
+        wco:admin_name        "Lagos" ;
+        wco:cityIsLocatedIn   dbr:Nigeria ;
+        wco:isAdminCapitalOf  dbr:Nigeria ;
+        wco:isLocatedIn       dbr:Nigeria ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:Nigeria ;
+        wco:latitude          "6.45"^^xsd:float ;
+        wco:longitude         "3.4"^^xsd:float ;
+        wco:name              "Lagos" ;
+        wco:name_ascii        "Lagos" ;
+        wco:population        "15279000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Lagos .
+
+dbr:Bijie  a                 wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name       "Guizhou" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "27.3019"^^xsd:float ;
+        wco:longitude        "105.2863"^^xsd:float ;
+        wco:name             "Bijie" ;
+        wco:name_ascii       "Bijie" ;
+        wco:population       "6537498"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Bijie .
+
+dbr:Ningbo  a                 wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Zhejiang" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "29.875"^^xsd:float ;
+        wco:longitude         "121.5492"^^xsd:float ;
+        wco:name              "Ningbo" ;
+        wco:name_ascii        "Ningbo" ;
+        wco:population        "7639000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Ningbo .
+
+dbr:Nigeria  a               wco:Country , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 ;
+        wco:hasAdminCapital  dbr:Onitsha , dbr:Lagos ;
+        wco:hasCity          dbr:Onitsha , dbr:Lagos ;
+        wco:iso2code         "NG" ;
+        wco:iso3code         "NGA" ;
+        wco:name             "Nigeria" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nigeria .
+
+dbr:São_Paulo  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b0 ;
+        wco:admin_name                  "São Paulo" ;
+        wco:cityIsLocatedIn             dbr:Brazil ;
+        wco:isAdminCapitalOf            dbr:Brazil ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Brazil ;
+        wco:isLocatedIn                 dbr:Brazil ;
+        wco:latitude                    "-23.5504"^^xsd:float ;
+        wco:longitude                   "-46.6339"^^xsd:float ;
+        wco:name                        "São Paulo" ;
+        wco:name_ascii                  "Sao Paulo" ;
+        wco:population                  "22046000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:São_Paulo .
+
+dbr:Tokyo  a                 wco:City , wco:CapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Tōkyō" ;
+        wco:cityIsLocatedIn  dbr:Japan ;
+        wco:isCapitalOf      dbr:Japan ;
+        wco:isLocatedIn      dbr:Japan ;
+        wco:latitude         "35.6897"^^xsd:float ;
+        wco:longitude        "139.6922"^^xsd:float ;
+        wco:name             "Tokyo" ;
+        wco:name_ascii       "Tokyo" ;
+        wco:population       "37977000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tokyo .
+
+dbr:Lima  a                  wco:City , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Lima" ;
+        wco:cityIsLocatedIn  dbr:Peru ;
+        wco:isCapitalOf      dbr:Peru ;
+        wco:isLocatedIn      dbr:Peru ;
+        wco:latitude         "-12.05"^^xsd:float ;
+        wco:longitude        "-77.0333"^^xsd:float ;
+        wco:name             "Lima" ;
+        wco:name_ascii       "Lima" ;
+        wco:population       "9848000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Lima .
+
+dbr:Fuyang  a                wco:City , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Anhui" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "32.8986"^^xsd:float ;
+        wco:longitude        "115.8045"^^xsd:float ;
+        wco:name             "Fuyang" ;
+        wco:name_ascii       "Fuyang" ;
+        wco:population       "8360000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Fuyang .
+
+dbr:Kolkata  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "West Bengal" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "22.5411"^^xsd:float ;
+        wco:longitude                   "88.3378"^^xsd:float ;
+        wco:name                        "Kolkāta" ;
+        wco:name_ascii                  "Kolkata" ;
+        wco:population                  "17560000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Kolkata .
+
+dbr:Angola  a         wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Luanda ;
+        wco:hasCity   dbr:Luanda ;
+        wco:iso2code  "AO" ;
+        wco:iso3code  "AGO" ;
+        wco:name      "Angola" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Angola .
+
+dbr:Paris  a                 wco:City , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 , wco:CapitalCity ;
+        wco:admin_name       "Île-de-France" ;
+        wco:cityIsLocatedIn  dbr:France ;
+        wco:isCapitalOf      dbr:France ;
+        wco:isLocatedIn      dbr:France ;
+        wco:latitude         "48.8566"^^xsd:float ;
+        wco:longitude        "2.3522"^^xsd:float ;
+        wco:name             "Paris" ;
+        wco:name_ascii       "Paris" ;
+        wco:population       "11020000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Paris .
+
+dbr:Seoul  a                 wco:City , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , wco:CapitalCity , _:b3 ;
+        wco:admin_name       "Seoul" ;
+        wco:cityIsLocatedIn  dbr:South_Korea ;
+        wco:isCapitalOf      dbr:South_Korea ;
+        wco:isLocatedIn      dbr:South_Korea ;
+        wco:latitude         "37.5833"^^xsd:float ;
+        wco:longitude        "127"^^xsd:float ;
+        wco:name             "Seoul" ;
+        wco:name_ascii       "Seoul" ;
+        wco:population       "21794000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Seoul .
+
+dbr:Mumbai  a                           wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Mahārāshtra" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "18.9667"^^xsd:float ;
+        wco:longitude                   "72.8333"^^xsd:float ;
+        wco:name                        "Mumbai" ;
+        wco:name_ascii                  "Mumbai" ;
+        wco:population                  "23355000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Mumbai .
+
+dbr:United_Kingdom  a  wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:London ;
+        wco:hasCity   dbr:London ;
+        wco:iso2code  "GB" ;
+        wco:iso3code  "GBR" ;
+        wco:name      "United Kingdom" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:United_Kingdom .
+
+dbr:Guangzhou  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Guangdong" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "23.1288"^^xsd:float ;
+        wco:longitude                   "113.259"^^xsd:float ;
+        wco:name                        "Guangzhou" ;
+        wco:name_ascii                  "Guangzhou" ;
+        wco:population                  "20902000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Guangzhou .
+
+dbr:Tongshan  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Jiangsu" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "34.261"^^xsd:float ;
+        wco:longitude         "117.1859"^^xsd:float ;
+        wco:name              "Tongshan" ;
+        wco:name_ascii        "Tongshan" ;
+        wco:population        "8669000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tongshan .
+
+dbr:Wuhan  a                            wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Hubei" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "30.5872"^^xsd:float ;
+        wco:longitude                   "114.2881"^^xsd:float ;
+        wco:name                        "Wuhan" ;
+        wco:name_ascii                  "Wuhan" ;
+        wco:population                  "8962000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Wuhan .
+
+dbr:Bangladesh  a     wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Dhaka ;
+        wco:hasCity   dbr:Dhaka ;
+        wco:iso2code  "BD" ;
+        wco:iso3code  "BGD" ;
+        wco:name      "Bangladesh" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Bangladesh .
+
+<http://de.dbpedia.org/resource/Zhumadian>
+        a                    wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Henan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "32.9773"^^xsd:float ;
+        wco:longitude        "114.0253"^^xsd:float ;
+        wco:name             "Zhumadian" ;
+        wco:name_ascii       "Zhumadian" ;
+        wco:population       "7640000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://de.dbpedia.org/resource/Zhumadian> .
+
+dbr:Hangzhou  a                         wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Zhejiang" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "30.25"^^xsd:float ;
+        wco:longitude                   "120.1675"^^xsd:float ;
+        wco:name                        "Hangzhou" ;
+        wco:name_ascii                  "Hangzhou" ;
+        wco:population                  "6446000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hangzhou .
+
+dbr:Kinshasa  a              wco:Country , wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 , wco:CapitalCity , <http://dbpedia.org/ontology/Country> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Kinshasa ;
+        wco:admin_name       "Kinshasa" ;
+        wco:cityIsLocatedIn  dbr:Kinshasa ;
+        wco:hasCity          dbr:Kinshasa ;
+        wco:isCapitalOf      dbr:Kinshasa ;
+        wco:isLocatedIn      dbr:Kinshasa ;
+        wco:iso2code         "CD" ;
+        wco:iso3code         "COD" ;
+        wco:latitude         "-4.3317"^^xsd:float ;
+        wco:longitude        "15.3139"^^xsd:float ;
+        wco:name             "Congo (Kinshasa)" , "Kinshasa" ;
+        wco:name_ascii       "Kinshasa" ;
+        wco:population       "13528000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Kinshasa .
+
+dbr:Santiago  a              wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , wco:CapitalCity ;
+        wco:admin_name       "Región Metropolitana" ;
+        wco:cityIsLocatedIn  dbr:Chile ;
+        wco:isCapitalOf      dbr:Chile ;
+        wco:isLocatedIn      dbr:Chile ;
+        wco:latitude         "-33.45"^^xsd:float ;
+        wco:longitude        "-70.6667"^^xsd:float ;
+        wco:name             "Santiago" ;
+        wco:name_ascii       "Santiago" ;
+        wco:population       "7007000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Santiago .
+
+dbr:United_States  a  wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:hasCity   dbr:Miami , dbr:Chicago , dbr:Los_Angeles , dbr:New_York_City ;
+        wco:iso2code  "US" ;
+        wco:iso3code  "USA" ;
+        wco:name      "United States" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:United_States .
+
+dbr:Hengyang  a              wco:City , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Hunan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "26.8968"^^xsd:float ;
+        wco:longitude        "112.5857"^^xsd:float ;
+        wco:name             "Hengyang" ;
+        wco:name_ascii       "Hengyang" ;
+        wco:population       "7148344"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hengyang .
+
+dbr:Dar_es_Salaam  a         wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , wco:CapitalCity ;
+        wco:admin_name       "Dar es Salaam" ;
+        wco:cityIsLocatedIn  dbr:Tanzania ;
+        wco:isCapitalOf      dbr:Tanzania ;
+        wco:isLocatedIn      dbr:Tanzania ;
+        wco:latitude         "-6.8"^^xsd:float ;
+        wco:longitude        "39.2833"^^xsd:float ;
+        wco:name             "Dar es Salaam" ;
+        wco:name_ascii       "Dar es Salaam" ;
+        wco:population       "6698000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Dar_es_Salaam .
+
+dbr:Zhengzhou  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Henan" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "34.7492"^^xsd:float ;
+        wco:longitude                   "113.6605"^^xsd:float ;
+        wco:name                        "Zhengzhou" ;
+        wco:name_ascii                  "Zhengzhou" ;
+        wco:population                  "7005000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Zhengzhou .
+
+dbr:Hanoi  a                 wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/City> , _:b3 , wco:CapitalCity ;
+        wco:admin_name       "Hà Nội" ;
+        wco:cityIsLocatedIn  dbr:Vietnam ;
+        wco:isCapitalOf      dbr:Vietnam ;
+        wco:isLocatedIn      dbr:Vietnam ;
+        wco:latitude         "21.0245"^^xsd:float ;
+        wco:longitude        "105.8412"^^xsd:float ;
+        wco:name             "Hanoi" ;
+        wco:name_ascii       "Hanoi" ;
+        wco:population       "7785000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hanoi .
+
+dbr:Mexico  a         wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Mexico_City ;
+        wco:hasCity   dbr:Mexico_City ;
+        wco:iso2code  "MX" ;
+        wco:iso3code  "MEX" ;
+        wco:name      "Mexico" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Mexico .
+
+dbr:Philippines  a    wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Manila ;
+        wco:hasCity   dbr:Manila ;
+        wco:iso2code  "PH" ;
+        wco:iso3code  "PHL" ;
+        wco:name      "Philippines" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Philippines .
+
+dbr:Buenos_Aires  a          wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Buenos Aires, Ciudad Autónoma de" ;
+        wco:cityIsLocatedIn  dbr:Argentina ;
+        wco:isCapitalOf      dbr:Argentina ;
+        wco:isLocatedIn      dbr:Argentina ;
+        wco:latitude         "-34.5997"^^xsd:float ;
+        wco:longitude        "-58.3819"^^xsd:float ;
+        wco:name             "Buenos Aires" ;
+        wco:name_ascii       "Buenos Aires" ;
+        wco:population       "16157000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Buenos_Aires .
+
+dbr:Indonesia  a      wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Jakarta ;
+        wco:hasCity   dbr:Jakarta ;
+        wco:iso2code  "ID" ;
+        wco:iso3code  "IDN" ;
+        wco:name      "Indonesia" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Indonesia .
+
+dbr:Yancheng  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Jiangsu" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "33.3936"^^xsd:float ;
+        wco:longitude         "120.1339"^^xsd:float ;
+        wco:name              "Yancheng" ;
+        wco:name_ascii        "Yancheng" ;
+        wco:population        "7260240"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Yancheng .
+
+dbr:Russia  a         wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Moscow ;
+        wco:hasCity   dbr:Moscow ;
+        wco:iso2code  "RU" ;
+        wco:iso3code  "RUS" ;
+        wco:name      "Russia" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Russia .
+
+dbr:Tanzania  a       wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Dar_es_Salaam ;
+        wco:hasCity   dbr:Dar_es_Salaam ;
+        wco:iso2code  "TZ" ;
+        wco:iso3code  "TZA" ;
+        wco:name      "Tanzania" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tanzania .
+
+dbr:Istanbul  a                         wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b0 ;
+        wco:admin_name                  "İstanbul" ;
+        wco:cityIsLocatedIn             dbr:Turkey ;
+        wco:isAdminCapitalOf            dbr:Turkey ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Turkey ;
+        wco:isLocatedIn                 dbr:Turkey ;
+        wco:latitude                    "41.01"^^xsd:float ;
+        wco:longitude                   "28.9603"^^xsd:float ;
+        wco:name                        "Istanbul" ;
+        wco:name_ascii                  "Istanbul" ;
+        wco:population                  "15154000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Istanbul .
+
+dbr:Chicago  a               wco:City , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 ;
+        wco:admin_name       "Illinois" ;
+        wco:cityIsLocatedIn  dbr:United_States ;
+        wco:isLocatedIn      dbr:United_States ;
+        wco:latitude         "41.8373"^^xsd:float ;
+        wco:longitude        "-87.6862"^^xsd:float ;
+        wco:name             "Chicago" ;
+        wco:name_ascii       "Chicago" ;
+        wco:population       "8604203"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Chicago .
+
+dbr:Brazil  a                wco:Country , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 ;
+        wco:hasAdminCapital  dbr:Rio_de_Janeiro , dbr:São_Paulo ;
+        wco:hasCity          dbr:Rio_de_Janeiro , dbr:São_Paulo ;
+        wco:iso2code         "BR" ;
+        wco:iso3code         "BRA" ;
+        wco:name             "Brazil" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Brazil .
+
+dbr:Ganzhou  a                wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name        "Jiangxi" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "25.8292"^^xsd:float ;
+        wco:longitude         "114.9336"^^xsd:float ;
+        wco:name              "Ganzhou" ;
+        wco:name_ascii        "Ganzhou" ;
+        wco:population        "8677600"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Ganzhou .
+
+dbr:Country_music  a  wco:Country , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        wco:hasCity   wco:city_ascii ;
+        wco:iso2code  "iso2" ;
+        wco:iso3code  "iso3" ;
+        wco:name      "country" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Country_music .
+
+dbr:Tangshan  a              wco:City , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Hebei" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "39.6292"^^xsd:float ;
+        wco:longitude        "118.1742"^^xsd:float ;
+        wco:name             "Tangshan" ;
+        wco:name_ascii       "Tangshan" ;
+        wco:population       "7100000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Tangshan .
+
+<http://fr.dbpedia.org/resource/Zhoukou>
+        a                     wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Henan" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "33.625"^^xsd:float ;
+        wco:longitude         "114.6418"^^xsd:float ;
+        wco:name              "Zhoukou" ;
+        wco:name_ascii        "Zhoukou" ;
+        wco:population        "9901000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://fr.dbpedia.org/resource/Zhoukou> .
+
+wco:united_kingdom  a  <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                wco:london ;
+        wco:hasCity   wco:oxford , wco:london ;
+        wco:iso2code  "GB" ;
+        wco:iso3code  "GBR" ;
+        wco:name      "United Kingdom" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                wco:united_kingdom .
+
+dbr:Vietnam  a               wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b4 ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Hanoi ;
+        wco:hasAdminCapital  dbr:Ho_Chi_Minh_City ;
+        wco:hasCity          dbr:Ho_Chi_Minh_City , dbr:Hanoi ;
+        wco:iso2code         "VN" ;
+        wco:iso3code         "VNM" ;
+        wco:name             "Vietnam" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Vietnam .
+
+dbr:Kunming  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name                  "Yunnan" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "25.0433"^^xsd:float ;
+        wco:longitude                   "102.7061"^^xsd:float ;
+        wco:name                        "Kunming" ;
+        wco:name_ascii                  "Kunming" ;
+        wco:population                  "6250000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Kunming .
+
+dbr:Beijing  a               wco:City , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Beijing" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isCapitalOf      dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "39.905"^^xsd:float ;
+        wco:longitude        "116.3914"^^xsd:float ;
+        wco:name             "Beijing" ;
+        wco:name_ascii       "Beijing" ;
+        wco:population       "19433000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Beijing .
+
+dbr:Egypt  a          wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Cairo ;
+        wco:hasCity   dbr:Cairo ;
+        wco:iso2code  "EG" ;
+        wco:iso3code  "EGY" ;
+        wco:name      "Egypt" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Egypt .
+
+dbr:Luoyang  a               wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Henan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "34.6587"^^xsd:float ;
+        wco:longitude        "112.4245"^^xsd:float ;
+        wco:name             "Luoyang" ;
+        wco:name_ascii       "Luoyang" ;
+        wco:population       "6549941"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Luoyang .
+
+dbr:Sudan  a          wco:Country , <http://www.w3.org/2002/07/owl#Thing> , <http://dbpedia.org/ontology/Country> , _:b4 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://dbpedia.org/ontology/capital>
+                dbr:Khartoum ;
+        wco:hasCity   dbr:Khartoum ;
+        wco:iso2code  "SD" ;
+        wco:iso3code  "SDN" ;
+        wco:name      "Sudan" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Sudan .
+
+dbr:Heze  a                   wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Shandong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "35.2333"^^xsd:float ;
+        wco:longitude         "115.4333"^^xsd:float ;
+        wco:name              "Heze" ;
+        wco:name_ascii        "Heze" ;
+        wco:population        "8750000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Heze .
+
+dbr:Ahmadabad  a              wco:City , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , _:b2 ;
+        wco:admin_name        "Gujarāt" ;
+        wco:cityIsLocatedIn   dbr:India ;
+        wco:isAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn       dbr:India ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:India ;
+        wco:latitude          "23.03"^^xsd:float ;
+        wco:longitude         "72.58"^^xsd:float ;
+        wco:name              "Ahmadābād" ;
+        wco:name_ascii        "Ahmadabad" ;
+        wco:population        "7410000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Ahmadabad .
+
+dbr:Luanda  a                wco:City , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 , wco:CapitalCity ;
+        wco:admin_name       "Luanda" ;
+        wco:cityIsLocatedIn  dbr:Angola ;
+        wco:isCapitalOf      dbr:Angola ;
+        wco:isLocatedIn      dbr:Angola ;
+        wco:latitude         "-8.8383"^^xsd:float ;
+        wco:longitude        "13.2344"^^xsd:float ;
+        wco:name             "Luanda" ;
+        wco:name_ascii       "Luanda" ;
+        wco:population       "8417000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Luanda .
+
+dbr:Baoding  a               wco:City , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Hebei" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "38.8671"^^xsd:float ;
+        wco:longitude        "115.4845"^^xsd:float ;
+        wco:name             "Baoding" ;
+        wco:name_ascii       "Baoding" ;
+        wco:population       "10700000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Baoding .
+
+dbr:Huanggang  a              wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Hubei" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "30.45"^^xsd:float ;
+        wco:longitude         "114.875"^^xsd:float ;
+        wco:name              "Huanggang" ;
+        wco:name_ascii        "Huanggang" ;
+        wco:population        "6667000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Huanggang .
+
+dbr:Zhanjiang  a              wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name        "Guangdong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "21.1967"^^xsd:float ;
+        wco:longitude         "110.4031"^^xsd:float ;
+        wco:name              "Zhanjiang" ;
+        wco:name_ascii        "Zhanjiang" ;
+        wco:population        "6900000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Zhanjiang .
+
+dbr:Handan  a                wco:City , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name       "Hebei" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "36.6116"^^xsd:float ;
+        wco:longitude        "114.4894"^^xsd:float ;
+        wco:name             "Handan" ;
+        wco:name_ascii       "Handan" ;
+        wco:population       "8499000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Handan .
+
+dbr:Yichun  a                 wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 ;
+        wco:admin_name        "Jiangxi" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "27.8041"^^xsd:float ;
+        wco:longitude         "114.383"^^xsd:float ;
+        wco:name              "Yichun" ;
+        wco:name_ascii        "Yichun" ;
+        wco:population        "6048700"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Yichun .
+
+dbr:Jakarta  a               wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Jakarta" ;
+        wco:cityIsLocatedIn  dbr:Indonesia ;
+        wco:isCapitalOf      dbr:Indonesia ;
+        wco:isLocatedIn      dbr:Indonesia ;
+        wco:latitude         "-6.2146"^^xsd:float ;
+        wco:longitude        "106.8451"^^xsd:float ;
+        wco:name             "Jakarta" ;
+        wco:name_ascii       "Jakarta" ;
+        wco:population       "34540000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Jakarta .
+
+<http://dbpedia.org/resource/Bogota,_New_Jersey>
+        a                    wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , wco:CapitalCity , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Bogotá" ;
+        wco:cityIsLocatedIn  dbr:Colombia ;
+        wco:isCapitalOf      dbr:Colombia ;
+        wco:isLocatedIn      dbr:Colombia ;
+        wco:latitude         "4.6126"^^xsd:float ;
+        wco:longitude        "-74.0705"^^xsd:float ;
+        wco:name             "Bogotá" ;
+        wco:name_ascii       "Bogota" ;
+        wco:population       "9464000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://dbpedia.org/resource/Bogota,_New_Jersey> .
+
+dbr:Kuala_Lumpur  a          wco:City , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , wco:CapitalCity , _:b3 ;
+        wco:admin_name       "Kuala Lumpur" ;
+        wco:cityIsLocatedIn  dbr:Malaysia ;
+        wco:isCapitalOf      dbr:Malaysia ;
+        wco:isLocatedIn      dbr:Malaysia ;
+        wco:latitude         "3.1478"^^xsd:float ;
+        wco:longitude        "101.6953"^^xsd:float ;
+        wco:name             "Kuala Lumpur" ;
+        wco:name_ascii       "Kuala Lumpur" ;
+        wco:population       "8285000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Kuala_Lumpur .
+
+dbr:Xinyang  a               wco:City , <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Henan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "32.1264"^^xsd:float ;
+        wco:longitude        "114.0672"^^xsd:float ;
+        wco:name             "Xinyang" ;
+        wco:name_ascii       "Xinyang" ;
+        wco:population       "6634000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Xinyang .
+
+dbr:Shaoyang  a              wco:City , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name       "Hunan" ;
+        wco:cityIsLocatedIn  dbr:China ;
+        wco:isLocatedIn      dbr:China ;
+        wco:latitude         "27.2418"^^xsd:float ;
+        wco:longitude        "111.4725"^^xsd:float ;
+        wco:name             "Shaoyang" ;
+        wco:name_ascii       "Shaoyang" ;
+        wco:population       "7071000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shaoyang .
+
+dbr:Shangrao  a               wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , _:b1 , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name        "Jiangxi" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "28.4419"^^xsd:float ;
+        wco:longitude         "117.9633"^^xsd:float ;
+        wco:name              "Shangrao" ;
+        wco:name_ascii        "Shangrao" ;
+        wco:population        "6579714"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Shangrao .
+
+dbr:Rio_de_Janeiro  a                   wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b0 ;
+        wco:admin_name                  "Rio de Janeiro" ;
+        wco:cityIsLocatedIn             dbr:Brazil ;
+        wco:isAdminCapitalOf            dbr:Brazil ;
+        wco:isFirstLevelAdminCapitalOf  dbr:Brazil ;
+        wco:isLocatedIn                 dbr:Brazil ;
+        wco:latitude                    "-22.9083"^^xsd:float ;
+        wco:longitude                   "-43.1964"^^xsd:float ;
+        wco:name                        "Rio de Janeiro" ;
+        wco:name_ascii                  "Rio de Janeiro" ;
+        wco:population                  "12272000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Rio_de_Janeiro .
+
+dbr:Hyderabad  a                        wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , <http://dbpedia.org/ontology/City> , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        wco:admin_name                  "Telangana" ;
+        wco:cityIsLocatedIn             dbr:India ;
+        wco:isAdminCapitalOf            dbr:India ;
+        wco:isFirstLevelAdminCapitalOf  dbr:India ;
+        wco:isLocatedIn                 dbr:India ;
+        wco:latitude                    "17.3667"^^xsd:float ;
+        wco:longitude                   "78.4667"^^xsd:float ;
+        wco:name                        "Hyderābād" ;
+        wco:name_ascii                  "Hyderabad" ;
+        wco:population                  "9746000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Hyderabad .
+
+dbr:Foshan  a                 wco:City , _:b2 , wco:SecondLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , wco:AdminCapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name        "Guangdong" ;
+        wco:cityIsLocatedIn   dbr:China ;
+        wco:isAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn       dbr:China ;
+        wco:isSecondLevelAdminCapitalOf
+                dbr:China ;
+        wco:latitude          "23.0292"^^xsd:float ;
+        wco:longitude         "113.1056"^^xsd:float ;
+        wco:name              "Foshan" ;
+        wco:name_ascii        "Foshan" ;
+        wco:population        "7194311"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Foshan .
+
+dbr:Nanjing  a                          wco:City , wco:FirstLevelAdminCapitalCity , <http://www.w3.org/2002/07/owl#Thing> , _:b0 , wco:AdminCapitalCity , _:b1 , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://dbpedia.org/ontology/City> ;
+        wco:admin_name                  "Jiangsu" ;
+        wco:cityIsLocatedIn             dbr:China ;
+        wco:isAdminCapitalOf            dbr:China ;
+        wco:isFirstLevelAdminCapitalOf  dbr:China ;
+        wco:isLocatedIn                 dbr:China ;
+        wco:latitude                    "32.05"^^xsd:float ;
+        wco:longitude                   "118.7667"^^xsd:float ;
+        wco:name                        "Nanjing" ;
+        wco:name_ascii                  "Nanjing" ;
+        wco:population                  "7496000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Nanjing .
+
+dbr:Khartoum  a              wco:City , <http://www.w3.org/2002/07/owl#Thing> , wco:CapitalCity , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://dbpedia.org/ontology/City> , _:b1 ;
+        wco:admin_name       "Khartoum" ;
+        wco:cityIsLocatedIn  dbr:Sudan ;
+        wco:isCapitalOf      dbr:Sudan ;
+        wco:isLocatedIn      dbr:Sudan ;
+        wco:latitude         "15.6031"^^xsd:float ;
+        wco:longitude        "32.5265"^^xsd:float ;
+        wco:name             "Khartoum" ;
+        wco:name_ascii       "Khartoum" ;
+        wco:population       "7282000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Khartoum .
+
+dbr:Manila  a                wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b1 , <http://www.w3.org/2002/07/owl#Thing> , _:b3 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Manila" ;
+        wco:cityIsLocatedIn  dbr:Philippines ;
+        wco:isCapitalOf      dbr:Philippines ;
+        wco:isLocatedIn      dbr:Philippines ;
+        wco:latitude         "14.5958"^^xsd:float ;
+        wco:longitude        "120.9772"^^xsd:float ;
+        wco:name             "Manila" ;
+        wco:name_ascii       "Manila" ;
+        wco:population       "23088000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Manila .
+
+dbr:Riyadh  a                wco:City , <http://www.w3.org/2000/01/rdf-schema#Resource> , _:b3 , <http://www.w3.org/2002/07/owl#Thing> , _:b1 , <http://dbpedia.org/ontology/City> , wco:CapitalCity ;
+        wco:admin_name       "Ar Riyāḑ" ;
+        wco:cityIsLocatedIn  dbr:Saudi_Arabia ;
+        wco:isCapitalOf      dbr:Saudi_Arabia ;
+        wco:isLocatedIn      dbr:Saudi_Arabia ;
+        wco:latitude         "24.65"^^xsd:float ;
+        wco:longitude        "46.71"^^xsd:float ;
+        wco:name             "Riyadh" ;
+        wco:name_ascii       "Riyadh" ;
+        wco:population       "6881000"^^xsd:long ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                dbr:Riyadh .
+
+wco:oxford  a                <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://dbpedia.org/ontology/City> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , _:b1 ;
+        <http://dbpedia.org/ontology/populationTotal>
+                "177676"^^xsd:long ;
+        wco:cityIsLocatedIn  wco:united_kingdom ;
+        wco:isLocatedIn      wco:united_kingdom ;
+        wco:latitude         "51.751163"^^xsd:float ;
+        wco:longitude        "-1.2546656"^^xsd:float ;
+        wco:name             "Oxford" ;
+        wco:name_ascii       "Oxford" ;
+        <http://www.w3.org/2002/07/owl#sameAs>
+                wco:oxford .
+
+<http://www.w3.org/2002/07/owl#AnnotationProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+wco:City  a     <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+wco:Country  a  <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2002/07/owl#NamedIndividual>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2000/01/rdf-schema#Container>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
